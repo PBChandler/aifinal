@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 1850706635059785642}
   - component: {fileID: 5688457425580776154}
   - component: {fileID: 6785034485186889642}
+  - component: {fileID: 749941805692018626}
   m_Layer: 0
   m_Name: AI_Shrieker
   m_TagString: Untagged
@@ -269,26 +270,37 @@ MonoBehaviour:
     whenTriggered: {fileID: 3306209279337364547}
     OnDetriggerInstead: 0
     priority: 0
+    fromAnyState: 0
   - From: {fileID: 3956746365353783612}
     To: {fileID: 8336999749793715195}
     whenTriggered: {fileID: 3306209279337364547}
     OnDetriggerInstead: 1
     priority: 0
+    fromAnyState: 0
   - From: {fileID: 3956746365353783612}
     To: {fileID: 2640689306726870750}
     whenTriggered: {fileID: 7220380475196815102}
     OnDetriggerInstead: 0
     priority: 1
+    fromAnyState: 0
   - From: {fileID: 8336999749793715195}
     To: {fileID: 2640689306726870750}
     whenTriggered: {fileID: 1850706635059785642}
     OnDetriggerInstead: 0
     priority: 1
+    fromAnyState: 0
   - From: {fileID: 3956746365353783612}
     To: {fileID: 2640689306726870750}
     whenTriggered: {fileID: 1850706635059785642}
     OnDetriggerInstead: 0
     priority: 1
+    fromAnyState: 0
+  - From: {fileID: 8336999749793715195}
+    To: {fileID: 2640689306726870750}
+    whenTriggered: {fileID: 749941805692018626}
+    OnDetriggerInstead: 0
+    priority: 3
+    fromAnyState: 1
   health: 24
   triggeringContactDamage: 0
   agent: {fileID: 5688457425580776154}
@@ -309,6 +321,7 @@ MonoBehaviour:
   ImmuneToHits: 0
   ImmuneToLines: 0
   ImmuneToExplosions: 0
+  broadCastFlagOnEnter: 
 --- !u!114 &7220380475196815102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +357,7 @@ MonoBehaviour:
   ImmuneToHits: 0
   ImmuneToLines: 0
   ImmuneToExplosions: 0
+  broadCastFlagOnEnter: 
 --- !u!114 &3306209279337364547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +389,7 @@ MonoBehaviour:
   ImmuneToHits: 0
   ImmuneToLines: 0
   ImmuneToExplosions: 0
+  broadCastFlagOnEnter: scream
   speed: 1500
 --- !u!50 &8172850626091586768
 Rigidbody2D:
@@ -509,3 +524,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e39f6090724e4a4a8aadeb042afa2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &749941805692018626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7114287212260599923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da0abc273cd0c424db480c9f156acba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeingTriggered: 0
+  TriggeringMessage: scream
+  distance: 999

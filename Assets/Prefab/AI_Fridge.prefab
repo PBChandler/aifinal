@@ -60,11 +60,13 @@ MonoBehaviour:
     whenTriggered: {fileID: 1205489620154546631}
     OnDetriggerInstead: 0
     priority: 0
+    fromAnyState: 0
   - From: {fileID: 99495255491566610}
     To: {fileID: 2776007177016798087}
     whenTriggered: {fileID: 1205489620154546631}
     OnDetriggerInstead: 1
     priority: 0
+    fromAnyState: 0
   health: 1
   triggeringContactDamage: 0
   agent: {fileID: 7576933590771996483}
@@ -95,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llamo: STE_DoNothing
-  owner: {fileID: 0}
+  owner: {fileID: 2409901790080370457}
   ImmuneToHits: 1
   ImmuneToLines: 1
   ImmuneToExplosions: 1
+  broadCastFlagOnEnter: 
 --- !u!114 &2776007177016798087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,10 +115,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llamo: STE_DoNothing
-  owner: {fileID: 0}
+  owner: {fileID: 2409901790080370457}
   ImmuneToHits: 0
   ImmuneToLines: 0
   ImmuneToExplosions: 0
+  broadCastFlagOnEnter: 
   speed: 1500
 --- !u!50 &6538656931263719260
 Rigidbody2D:

@@ -119,6 +119,11 @@ public class AIBrain : MonoBehaviour
                     priorityToBeat = t.priority;
                 }
             }
+            if(t.fromAnyState && t.whenTriggered == trig && !t.OnDetriggerInstead)
+            {
+                to = t.To;
+                priorityToBeat = t.priority;
+            }
         }
         if (to != null)
         {
@@ -139,7 +144,14 @@ public class AIBrain : MonoBehaviour
                     priorityToBeat = t.priority;
                 }
             }
+
+            if (t.fromAnyState && t.whenTriggered == trig && t.OnDetriggerInstead)
+            {
+                to = t.To;
+                priorityToBeat = t.priority;
+            }
         }
+        
         if (to != null)
         {
             ChangeState(to);
@@ -153,5 +165,6 @@ public struct AITransition
     public AITrigger whenTriggered;
     public bool OnDetriggerInstead;
     public int priority;
+    public bool fromAnyState;
 }
 
