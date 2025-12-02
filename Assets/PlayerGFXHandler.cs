@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using static AIBrain;
 using UnityEngine.UI;
+using System.Linq;
 
 public class PlayerGFXHandler : MonoBehaviour
 {
@@ -11,18 +12,17 @@ public class PlayerGFXHandler : MonoBehaviour
     public Image[] hearts;
     void Start()
     {
+        hearts.Reverse();
         owner.dg_onhurt += Flash;
     }
 
-    public void Flash()
+    public void Flash(float high)
     {
-        //there are much better ways to do this but they were all fighting me so it's this for now.
-        if(owner.HP > 2)
-            hearts[2].color = Color.gray;
-        else if (owner.HP > 1)
-            hearts[1].color = Color.gray;
-        else hearts[0].color = Color.gray;
-        sr.color = Color.red;
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (owner.HP > i+1) hearts[i].color = Color.white;
+            else hearts[i].color = Color.gray;
+        }
         AudioSource.PlayClipAtPoint(hurt, transform.position, 0.5f);
         StartCoroutine(resetToColor());
     }

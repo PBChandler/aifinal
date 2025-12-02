@@ -44,6 +44,12 @@ public class ShriekerVFXManager : MonoBehaviour
                 break;
             case "STE_Chase":
                 sr.sprite = shrieking;
+                if(lastState != "STE_Chase")
+                {
+                    AudioSource.PlayClipAtPoint(scream, transform.position, 0.5f);
+                    lastState = "STE_Chase";
+                }
+                
                 break;
             default:
                 Debug.Log(brain.CurrentState.llamo);
@@ -53,6 +59,6 @@ public class ShriekerVFXManager : MonoBehaviour
 
     public void OnDestroy()
     {
-        AudioSource.PlayClipAtPoint(dead, transform.position);
+        AudioSource.PlayClipAtPoint(dead, transform.position, 0.5f);
     }
 }

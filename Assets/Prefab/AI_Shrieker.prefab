@@ -105,7 +105,7 @@ MonoBehaviour:
   closed: {fileID: -7783813424544337531, guid: aeb9b85a835595a45a303216a3ace656, type: 3}
   open: {fileID: 316918369954559746, guid: 67f91c756dace76428bde7272f1cf67e, type: 3}
   shrieking: {fileID: 7611641531693393499, guid: daddae5ba46d51c4987caf0faa8411d8, type: 3}
-  scream: {fileID: 8300000, guid: 368c90620d8220d4b92dc4dd3f1a588d, type: 3}
+  scream: {fileID: 8300000, guid: 6c812c0cf5084cb4fba8151203f9ee58, type: 3}
   dead: {fileID: 8300000, guid: 44256a0a10e006f44a9ef28fdc444be6, type: 3}
   hurt: {fileID: 8300000, guid: 48634479c2b71834789746377507ab2b, type: 3}
   src: {fileID: 4491416840709274186}
@@ -539,3 +539,4 @@ MonoBehaviour:
   isBeingTriggered: 0
   TriggeringMessage: scream
   distance: 999
+  cooldown: 0

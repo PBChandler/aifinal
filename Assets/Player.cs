@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
     private bool attackCooldown;
     public int HP = 3;
 
-    public delegate void onhurt();
+    public delegate void onhurt(float direction);
     public onhurt dg_onhurt;
     void Start()
     {
@@ -38,14 +38,14 @@ public class Player : MonoBehaviour
         dg_onhurt += dummy;
     }
 
-    public void dummy()
+    public void dummy(float f)
     {
 
     }
 
     public void InflictDamage(int damage)
     {
-        dg_onhurt.Invoke();
+        dg_onhurt.Invoke(-1);
         if (HP - damage <= 0)
         {
             Die();
@@ -92,20 +92,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0) && !attackCooldown)
         {
-            if(spawnedBombs.Count >= 4)
-            {
-                spawnedBombs.First().GetComponent<PlayerProjectile>().Explode();
-                spawnedBombs.Remove(spawnedBombs.First());
-            }
-            spr.sprite = openMouth;
-            attackCooldown = true;
-            Debug.DrawLine(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            Invoke("ResetMouth", 0.1f);
-            GameObject g = Instantiate(projectilePrefab, transform.position+ (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized*3, transform.rotation);
-            g.GetComponent<PlayerProjectile>().launchDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
-            g.GetComponent<PlayerProjectile>().owner = this;
-            spr.flipX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x ? false : true;
-            spawnedBombs.Add(g);
+            SpawnBomb();
             
             
         }
@@ -137,6 +124,27 @@ public class Player : MonoBehaviour
         spr.sprite = closedMouth;
         attackCooldown = false;
     }
+
+    public void SpawnBomb()
+    {
+        if (spawnedBombs.Count >= 4)
+        {
+            spawnedBombs.First().GetComponent<PlayerProjectile>().Explode();
+            spawnedBombs.Remove(spawnedBombs.First());
+        }
+        spr.sprite = openMouth;
+        attackCooldown = true;
+        Debug.DrawLine(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        Invoke("ResetMouth", 0.1f);
+        GameObject g = Instantiate(projectilePrefab, transform.position + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized * 3, transform.rotation);
+        g.GetComponent<PlayerProjectile>().launchDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+        g.GetComponent<PlayerProjectile>().owner = this;
+        spr.flipX = Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x ? false : true;
+        spawnedBombs.Add(g);
+    }
+
+
+   
     public void PlayFootStepSound()
     {
         float rand = steps.Count * Probability.GetSeededValue();

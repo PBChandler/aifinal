@@ -8,7 +8,7 @@ public class PlayerProjectile : MonoBehaviour
     private float curTime = 0;
     Rigidbody2D rb;
     public GameObject explosion;
-    [SerializeField] private SpriteRenderer myRend;
+    [SerializeField] public SpriteRenderer myRend;
     public Player owner;
     float stoppingY;
     public float dividend;
