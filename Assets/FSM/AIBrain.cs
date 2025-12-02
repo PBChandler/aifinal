@@ -2,7 +2,8 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
-
+using UnityEngine.AI;
+using NavMeshPlus;
 public class AIBrain : MonoBehaviour
 {
     public AIState CurrentState;
@@ -11,12 +12,22 @@ public class AIBrain : MonoBehaviour
     public delegate void hurt();
     public hurt dg_hurt;
     public bool triggeringContactDamage;
+    public NavMeshAgent agent;
     public void Start()
     {
         Invoke("Setup", 0.1f); //give other Start Methods time to run.
         dg_hurt += Dummy;
     }
-
+    static float agentDrift = 0.0001f; // minimal
+    public void SetDestination(GameObject target)
+    {
+        if (Mathf.Abs(transform.position.x - target.transform.position.x) < agentDrift)
+        {
+            var driftPos = target.transform.position + new Vector3(agentDrift, 0f, 0f);
+            agent.SetDestination(driftPos);
+        }
+       agent.SetDestination(target.transform.position);
+    }
     public void Dummy() { }
     public enum DamageType
     {
