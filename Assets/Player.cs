@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public GameObject projectilePrefab;
     public LineRenderer bars;
 
+    public bool immunityFrames = false;
     public List<AudioClip> steps;
 
     public AudioClip dashSound;
@@ -45,15 +46,30 @@ public class Player : MonoBehaviour
 
     public void InflictDamage(int damage)
     {
-        dg_onhurt.Invoke(-1);
-        if (HP - damage <= 0)
+        if (immunityFrames)
+            return;
+       
+        if (!immunityFrames)
         {
-            Die();
+            immunityFrames = true;
+            dg_onhurt.Invoke(-1);
+            if (HP - damage <= 0)
+            {
+                Die();
+            }
+            else
+            {
+                HP -= damage;
+            }
+            Invoke("stopimmunity", 1f);
         }
-        else
-        {
-            HP -= damage;
-        }
+            
+        
+    }
+
+    public void stopimmunity()
+    {
+        immunityFrames = false;
     }
 
     public void Die() 

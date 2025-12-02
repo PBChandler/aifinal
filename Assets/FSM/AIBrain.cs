@@ -4,6 +4,7 @@ using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 using NavMeshPlus;
+using UnityEngine.Rendering;
 public class AIBrain : MonoBehaviour
 {
     public AIState CurrentState;
@@ -13,6 +14,7 @@ public class AIBrain : MonoBehaviour
     public hurt dg_hurt;
     public bool triggeringContactDamage;
     public NavMeshAgent agent;
+    private bool stop;
     public void Start()
     {
         Invoke("Setup", 0.1f); //give other Start Methods time to run.
@@ -88,15 +90,29 @@ public class AIBrain : MonoBehaviour
     {
         CurrentState.owner = this;
         CurrentState.Process();
+        
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void FixedUpdate()
     {
-        if(collision.collider.gameObject == Player.instance.gameObject && triggeringContactDamage)
+        if (triggeringContactDamage)
         {
-            Player.instance.InflictDamage(1);
+            RaycastHit2D r = Physics2D.CircleCast(transform.position, 3f, Vector2.zero);
+            if (r.collider.gameObject == Player.instance.gameObject)
+            {
+                Player.instance.InflictDamage(1);
+            }
         }
     }
+    private void dumb()
+    {
+        stop = false;
+       
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }   
 
     public void ChangeState(AIState newState)
     {

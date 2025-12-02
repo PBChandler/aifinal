@@ -20,7 +20,7 @@ public class PlayerGFXHandler : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (owner.HP > i+1 || owner.HP == 3) hearts[i].color = Color.white;
+            if (owner.HP > i+1) hearts[i].color = Color.white;
             else hearts[i].color = Color.gray;
         }
         AudioSource.PlayClipAtPoint(hurt, transform.position, 0.5f);
