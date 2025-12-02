@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 75fd471b90f37a94bb7de5e79f8bd9ba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8484229785414850926
+    second: tutorialroom_0
+  - first:
+      213: 1950136583605363712
+    second: tutorialroom_1
+  - first:
+      213: 581291131044337119
+    second: tutorialroom_2
+  - first:
+      213: 1919080719893213193
+    second: tutorialroom_3
+  - first:
+      213: -5747508216415194479
+    second: tutorialroom_4
+  - first:
+      213: 1153510848912027452
+    second: tutorialroom_5
+  - first:
+      213: -7878894227906283426
+    second: tutorialroom_6
+  - first:
+      213: 8828292843606812995
+    second: tutorialroom_7
+  - first:
+      213: 8922212382056712281
+    second: tutorialroom_8
+  - first:
+      213: -4573816400582870915
+    second: tutorialroom_9
+  - first:
+      213: -3069303337815561724
+    second: tutorialroom_10
+  - first:
+      213: -2800289492766034507
+    second: tutorialroom_11
+  - first:
+      213: 3824825228118488411
+    second: tutorialroom_12
+  - first:
+      213: -5979437723018558252
+    second: tutorialroom_13
+  - first:
+      213: -1607508858595329458
+    second: tutorialroom_14
+  - first:
+      213: -1326848155124076885
+    second: tutorialroom_15
+  - first:
+      213: 2328846463662797485
+    second: tutorialroom_16
+  - first:
+      213: 8388702905419430459
+    second: tutorialroom_17
+  - first:
+      213: -7462967014003752549
+    second: tutorialroom_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tutorialroom_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 377
+        width: 71
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69d078d90a0eb570800000000000000
+      internalID: 8484229785414850926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 375
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004aa49f3e6401b10800000000000000
+      internalID: 1950136583605363712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 380
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd59bf03439211800800000000000000
+      internalID: 581291131044337119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 378
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900398c3fb1f1aa10800000000000000
+      internalID: 1919080719893213193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_4
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 147
+        width: 261
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192fee09abfbc30b0800000000000000
+      internalID: -5747508216415194479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 294
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3fe5f96108120010800000000000000
+      internalID: 1153510848912027452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_6
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 347
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5835c2a17b88a290800000000000000
+      internalID: -7878894227906283426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 302
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349ae442195648a70800000000000000
+      internalID: 8828292843606812995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 296
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958051bb3e012db70800000000000000
+      internalID: 8922212382056712281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 264
+        width: 63
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78f66f773a8680c0800000000000000
+      internalID: -4573816400582870915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_10
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 266
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a259940e4a765d0800000000000000
+      internalID: -3069303337815561724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_11
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 265
+        width: 107
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b5fb6bfa8f5329d0800000000000000
+      internalID: -2800289492766034507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 252
+        width: 47
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5574f9b742841530800000000000000
+      internalID: 3824825228118488411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_13
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 79
+        width: 225
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d488e24215c40da0800000000000000
+      internalID: -5979437723018558252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_14
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 101
+        width: 47
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ab126c53bf0b9e0800000000000000
+      internalID: -1607508858595329458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_15
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 169
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae62f202a6169de0800000000000000
+      internalID: -1326848155124076885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 46
+        width: 135
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2bb0b1589b15020800000000000000
+      internalID: 2328846463662797485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 60
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3affc3e8d8aa6470800000000000000
+      internalID: 8388702905419430459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tutorialroom_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 76
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9149df8a073e6890800000000000000
+      internalID: -7462967014003752549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tutorialroom_0: 8484229785414850926
+      tutorialroom_1: 1950136583605363712
+      tutorialroom_10: -3069303337815561724
+      tutorialroom_11: -2800289492766034507
+      tutorialroom_12: 3824825228118488411
+      tutorialroom_13: -5979437723018558252
+      tutorialroom_14: -1607508858595329458
+      tutorialroom_15: -1326848155124076885
+      tutorialroom_16: 2328846463662797485
+      tutorialroom_17: 8388702905419430459
+      tutorialroom_18: -7462967014003752549
+      tutorialroom_2: 581291131044337119
+      tutorialroom_3: 1919080719893213193
+      tutorialroom_4: -5747508216415194479
+      tutorialroom_5: 1153510848912027452
+      tutorialroom_6: -7878894227906283426
+      tutorialroom_7: 8828292843606812995
+      tutorialroom_8: 8922212382056712281
+      tutorialroom_9: -4573816400582870915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
