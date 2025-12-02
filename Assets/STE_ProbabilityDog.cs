@@ -17,8 +17,11 @@ public class STE_ProbabilityDog : AIState
         {
             if (Probability.instance.footsteps % 2 == 0)
             {
-                Player.instance.HP++;
-                Player.instance.dg_onhurt.Invoke(1);
+                if(Player.instance.HP < 3)
+                {
+                    Player.instance.HP++;
+                    Player.instance.dg_onhurt.Invoke(1);
+                }
             }
             else
             {
