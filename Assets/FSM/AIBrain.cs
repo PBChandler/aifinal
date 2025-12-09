@@ -1,6 +1,5 @@
 using NUnit.Framework;
 using System.Collections.Generic;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 using NavMeshPlus;
@@ -97,7 +96,7 @@ public class AIBrain : MonoBehaviour
     {
         if (triggeringContactDamage)
         {
-            RaycastHit2D r = Physics2D.CircleCast(transform.position, 3f, Vector2.zero);
+            RaycastHit2D r = Physics2D.CircleCast(transform.position, 2f, Vector2.zero);
             if (r.collider.gameObject == Player.instance.gameObject)
             {
                 Player.instance.InflictDamage(1);
